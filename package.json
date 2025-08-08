@@ -1,0 +1,12 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "A comprehensive tool for evaluating password strength with advanced security features including Barclays Mode for enterprise-grade security standards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

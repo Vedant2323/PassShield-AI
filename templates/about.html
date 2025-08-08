@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Password Strength Evaluator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="my-4 text-center">
+            <h1 class="display-4">About the Password Strength Evaluator</h1>
+            <p class="lead">How our system evaluates and improves your passwords</p>
+        </header>
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Project Overview</h2>
+                        <p>
+                            The Password Strength Evaluator is a comprehensive tool that helps you assess the security of your passwords and provides AI-powered suggestions for improvement. Our system combines advanced entropy calculations, real-world cracking simulations, pattern detection, and dictionary attack analysis to give you the most accurate assessment of your password's strength.
+                        </p>
+                        
+                        <h3 class="mt-4">Key Features</h3>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-shield-alt me-2"></i>Barclays Mode</h5>
+                                        <p>Enable our enterprise-grade security mode to evaluate passwords against strict financial industry requirements, with additional security measures and stricter policy enforcement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-calculator me-2"></i>Entropy Calculation</h5>
+                                        <p>We calculate the entropy (randomness) of your password to determine how resistant it is to brute force attacks, accounting for character distribution and patterns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-chart-bar me-2"></i>Attack Simulation</h5>
+                                        <p>Our interactive visualization shows how different attack methods would fare against your password, with accurate time estimates for dictionary, brute force, and rainbow table attacks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-brain me-2"></i>AI-Powered Suggestions</h5>
+                                        <p>Our system uses OpenAI's advanced language models to provide personalized suggestions for improving your password's strength while maintaining memorability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-4">How It Works</h3>
+                        <div class="accordion mt-3" id="howItWorksAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Password Security Evaluation
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#howItWorksAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our password evaluator analyzes several key factors to determine overall strength:</p>
+                                        <ul>
+                                            <li><strong>Character Composition:</strong> Distribution of lowercase, uppercase, numbers, and special characters</li>
+                                            <li><strong>Pattern Detection:</strong> Identification of sequential patterns, repeated characters, and keyboard patterns</li>
+                                            <li><strong>Dictionary Word Detection:</strong> Multi-language analysis to catch dictionary words in various languages</li>
+                                            <li><strong>Entropy Calculation:</strong> Mathematical analysis of password randomness and complexity</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Advanced Attack Simulation
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#howItWorksAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our attack simulation visualization uses advanced algorithms to estimate how long your password would resist various attack methods:</p>
+                                        <ul>
+                                            <li><strong>Dictionary Attack:</strong> Simulates attempts using common password lists and dictionaries (1 million attempts per second)</li>
+                                            <li><strong>Brute Force Attack:</strong> Tests every possible combination of characters (100 billion attempts per second)</li>
+                                            <li><strong>Rainbow Table Attack:</strong> Uses precomputed hash tables for rapid cracking (10 trillion lookups per second)</li>
+                                        </ul>
+                                        <p>Each simulation adjusts based on your password's characteristics - with longer passwords showing higher resistance to brute force, while passwords with common patterns become more vulnerable to dictionary attacks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Barclays Security Mode
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#howItWorksAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our Barclays Mode implements enterprise-grade security standards used by financial institutions, with strict requirements:</p>
+                                        <ul>
+                                            <li><strong>Minimum Length:</strong> 12 characters</li>
+                                            <li><strong>Character Requirements:</strong> Must include uppercase, lowercase, numbers, and special characters</li>
+                                            <li><strong>Minimum Entropy:</strong> 70 bits for high resistance to attacks</li>
+                                            <li><strong>Prohibited Content:</strong> Common words, sequential patterns, and bank-related terms</li>
+                                            <li><strong>Password History:</strong> Enforcement of password rotation policies</li>
+                                        </ul>
+                                        <p>Enabling Barclays Mode also adjusts all security calculations to reflect higher standards and more sophisticated attack vectors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        AI-Generated Suggestions
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#howItWorksAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our AI suggestion engine uses OpenAI's language models to provide two types of assistance:</p>
+                                        <ul>
+                                            <li><strong>Personalized Improvement Tips:</strong> Specific recommendations based on your password's weaknesses</li>
+                                            <li><strong>Strong Alternatives Generator:</strong> Creates memorable yet secure password suggestions</li>
+                                        </ul>
+                                        <p>When Barclays Mode is enabled, the AI engine generates financial-industry compliant passwords that meet all enterprise security requirements while remaining memorable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Data Breach Verification
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#howItWorksAccordion">
+                                    <div class="accordion-body">
+                                        <p>We check if your password has appeared in known data breaches using a secure, privacy-preserving implementation:</p>
+                                        <ul>
+                                            <li>Your password is hashed locally in your browser</li>
+                                            <li>Only a small portion of the hash is sent to the server</li>
+                                            <li>The system checks this partial hash against known breached passwords</li>
+                                            <li>You're alerted if your password appears in any breach database</li>
+                                        </ul>
+                                        <p>This feature helps you avoid using passwords that have already been compromised in previous data breaches.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-4">Privacy and Security</h3>
+                        <p>We take your privacy and security seriously:</p>
+                        <ul>
+                            <li>Your password is never stored on our servers</li>
+                            <li>All analysis happens in your browser through client-side JavaScript</li>
+                            <li>When using AI suggestions, we only send password characteristics, not the actual password</li>
+                            <li>We don't track or store any personal information</li>
+                            <li>Breach checking is done using k-anonymity for maximum privacy</li>
+                        </ul>
+
+                        <h3 class="mt-4">Technical Implementation</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="fab fa-python me-2"></i>Backend Technologies</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Python & Flask</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Machine Learning (scikit-learn)</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>OpenAI API Integration</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Advanced Entropy Algorithms</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5><i class="fab fa-js-square me-2"></i>Frontend Technologies</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>JavaScript (ES6+)</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Bootstrap 5</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Chart.js for Visualizations</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Modern CSS with Animations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <a href="/" class="btn btn-primary">Return to Password Evaluator</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-4">
+        <div class="container text-center">
+            <p>Password Strength Evaluator - A secure way to test your password strength</p>
+            <p class="mb-0">
+                <a href="/" class="text-decoration-none">Home</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
