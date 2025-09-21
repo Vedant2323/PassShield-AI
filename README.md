@@ -349,7 +349,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Bootstrap**: CSS framework components
 - **Font Awesome**: Icon library
 
-## 📞 Support
 
 ### **Issues**
 
